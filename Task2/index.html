@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan-Developer Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ishan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My Name Is <span class="purple">Ishan</span>
+                <div>& I am a Passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="Bg.png" alt="Error">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Technical Skills</h1>
+            <ol>
+                <li>C99</li>
+                <li>Bash Scripting</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Spring Hibernate</li>
+                <li>MySQL</li>
+                <li>DSA</li>
+            </ol>
+        </section>
+        <hr>
+        <section class="contactSection">
+            <h1>Contact Me</h1>
+            <form action="your-form-handler-url" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Kernel Developer</i> .', ' Software Developer.'],
+            typeSpeed: 70,
+        });
+    </script>
+</body>
+</html>
